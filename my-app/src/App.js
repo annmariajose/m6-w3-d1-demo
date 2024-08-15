@@ -12,9 +12,9 @@ class App extends Component {
       <Router>
         <Routes>
           <Route path='/' exact element={<Home/>} />
-          <Route path='/bar' exact element={<BarChartDemo/>} />
-          <Route path='/sphere' element={<SphereDemo/>} />
-          <Route path='/tree' element={<TreeDemo/>} />
+          <Route path='/bardemo' exact element={<BarChartDemo/>} />
+          <Route path='/spheredemo' element={<SphereDemo/>} />
+          <Route path='/treedemo' element={<TreeDemo/>} />
         </Routes>
       </Router>
     )

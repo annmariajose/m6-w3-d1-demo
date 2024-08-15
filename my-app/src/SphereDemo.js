@@ -1,14 +1,22 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import "bootstrap/dist/css/bootstrap.min.css";
-import './App.css';
+import React, {Component} from "react";
+import { Canvas } from "@react-vertex/core";
+import { useViewportSize } from "@react-vertex/dom-hooks";
+import Scene from "./SphereDemo/Scene";
+
+function Example() {
+    const { width, height } = useViewportSize();
+  
+    return (
+      <Canvas width={width} height={height}>
+        <Scene/>
+      </Canvas>
+    );
+  }
 
 class SphereDemo extends Component {
     render() {
         return (
-            <div>
-                <h1>Sphere</h1>
-            </div>
+            <Example/>
         );
     }
 }

@@ -10,6 +10,9 @@ class Home extends Component {
             <div>
                 <Navbar className='navbar-dark bg-dark px-5' expand="md">
                     <NavbarBrand tag={Link} to="/">Home</NavbarBrand>
+                    <NavbarBrand tag={Link} to="/bardemo">Bar</NavbarBrand>
+                    <NavbarBrand tag={Link} to="/spheredemo">Sphere</NavbarBrand>
+                    <NavbarBrand tag={Link} to="/treedemo">Tree</NavbarBrand>
                 </Navbar>
             </div>
         );

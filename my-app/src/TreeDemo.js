@@ -1,15 +1,10 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import "bootstrap/dist/css/bootstrap.min.css";
-import './App.css';
+import Tree from "./TreeDemo/Tree";
+import data from "./TreeDemo/data";
 
 class TreeDemo extends Component {
     render() {
-        return (
-            <div>
-                <h1>Tree</h1>
-            </div>
-        );
+        return <Tree data={data} width={600} height={500} />;
     }
 }
 
